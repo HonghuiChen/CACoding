@@ -8,6 +8,18 @@ public class SignupState {
     private String repeatPassword = "";
     private String repeatPasswordError = null;
 
+    ///
+    private String clearedUsernames;
+
+    public String getClearedUsernames() {
+        return clearedUsernames;
+    }
+
+    public void setClearedUsernames(String response) {
+        clearedUsernames = response;
+    }
+    ///
+
     public SignupState(SignupState copy) {
         username = copy.username;
         usernameError = copy.usernameError;
